@@ -8,7 +8,7 @@ def do_connect():
     if not sta_if.isconnected():
         print('connecting to network...')
         sta_if.active(True)
-        sta_if.connect('Vodacom-5EMN3XZ', '25628092')
+        sta_if.connect('WifiName', 'WifiPassword')
         while not sta_if.isconnected():
             pass
     print('network config:', sta_if.ifconfig())
